@@ -1,0 +1,19 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="getpathInfo" />
+          <option value="readConfig" />
+          <option value="readExcel" />
+          <option value="geturlParams" />
+          <option value="common.configEmail.win32com" />
+          <option value="common.configEmail.win64com" />
+          <option value="win32com" />
+          <option value="win32api" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
