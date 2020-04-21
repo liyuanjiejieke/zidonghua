@@ -256,9 +256,6 @@ class Template_mixin(object):
         s = s.replace(/>/g,'&gt;');
         return s;
     }
-    
-    
-    
     /* obsoleted by detail in <div>
     function showOutput(id, name) {
         var w = window.open("", //url

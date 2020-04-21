@@ -159,9 +159,6 @@
         s = s.replace(/>/g,'&gt;');
         return s;
     }
-    
-    
-    
     /* obsoleted by detail in <div>
     function showOutput(id, name) {
         var w = window.open("", //url
@@ -181,9 +178,9 @@
         
     <div class='page-header'>
         <h1>Test Report</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2019-12-23 18:12:43</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:00.015994</p>
-<p class='attribute'><strong>状态:</strong> 通过 1 失败 2</p>
+    <p class='attribute'><strong>开始时间:</strong> 2020-03-30 14:43:24</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:00.072977</p>
+<p class='attribute'><strong>状态:</strong> 通过 1</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>Test Description</p></div>
@@ -214,93 +211,42 @@
             <td>查看</td>
         </tr>
         
-    <tr class='failClass'>
+    <tr class='passClass'>
         <td>paramunittest.testUserLogin_0</td>
         <td>1</td>
-        <td>0</td>
         <td>1</td>
+        <td>0</td>
         <td>0</td>
         <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
     </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>test01case</div></td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        失败</a>
-    <div id='div_ft1.1' class="popup_window">
-        <pre>ft1.1: login测试开始前准备
-------------------开始读数据--------
-测试结束，输出log完结
-
-
-Traceback (most recent call last):
-  File "D:\python_project\zidonghua\TestCase\test01case.py", line 31, in test01case
-    self.checkResult()
-  File "D:\python_project\zidonghua\TestCase\test01case.py", line 44, in checkResult
-    self.assertEqual(ss['code'],200)
-AssertionError: 10001 != 200
-</pre>
-    </div>
-    <!--css div popup end-->
-    </td>
-</tr>
-
-    <tr class='failClass'>
-        <td>paramunittest.testUserLogin_1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td><a href="javascript:showClassDetail('c2',1)">详情</a></td>
-    </tr>
-
-<tr id='ft2.1' class='none'>
-    <td class='failCase'><div class='testcase'>test01case</div></td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
-        失败</a>
-    <div id='div_ft2.1' class="popup_window">
-        <pre>ft2.1: login_error测试开始前准备
-------------------开始读数据--------
-测试结束，输出log完结
-
-
-Traceback (most recent call last):
-  File "D:\python_project\zidonghua\TestCase\test01case.py", line 31, in test01case
-    self.checkResult()
-  File "D:\python_project\zidonghua\TestCase\test01case.py", line 46, in checkResult
-    self.assertEqual(ss['code'],-1)
-AssertionError: 10001 != -1
-</pre>
-    </div>
-    <!--css div popup end-->
-    </td>
-</tr>
-
-    <tr class='passClass'>
-        <td>paramunittest.testUserLogin_2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td><a href="javascript:showClassDetail('c3',1)">详情</a></td>
-    </tr>
-
-<tr id='pt3.1' class='hiddenRow'>
+<tr id='pt1.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test01case</div></td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
         通过</a>
-    <div id='div_pt3.1' class="popup_window">
-        <pre>pt3.1: login_null测试开始前准备
-------------------开始读数据--------
-测试结束，输出log完结
-
-
+    <div id='div_pt1.1' class="popup_window">
+        <pre>pt1.1: {'appId': 'EW_N3834426110', 'random': 5227939190585604}
+{'appId': 'EW_N3834426110', 'random': 5227939190585604, 'sign': 'c90b0b66e8cb05d208495e29575d30e2'}
+{
+  "code": "SUCCESS",
+  "merchantList": [
+    {
+      "address": "北京北京丰台区北京市北京市朝阳区东三环南路甲8号",
+      "contactName": "李爽",
+      "merchantCode": "EW_N6995399241",
+      "merchantId": 10130924,
+      "merchantName": "李爽乐刷蓝海门店A",
+      "openTime": "00:00-00:00",
+      "telephone": "17800231520"
+    }
+  ],
+  "msg": "查询成功",
+  "random": "5227939190585604",
+  "sign": "c90b0b66e8cb05d208495e29575d30e2"
+}=====================
+{'code': 'SUCCESS', 'merchantList': [{'address': '北京北京丰台区北京市北京市朝阳区东三环南路甲8号', 'contactName': '李爽', 'merchantCode': 'EW_N6995399241', 'merchantId': 10130924, 'merchantName': '李爽乐刷蓝海门店A', 'openTime': '00:00-00:00', 'telephone': '17800231520'}], 'msg': '查询成功', 'random': '5227939190585604', 'sign': 'c90b0b66e8cb05d208495e29575d30e2'}
 </pre>
     </div>
     <!--css div popup end-->
@@ -309,9 +255,9 @@ AssertionError: 10001 != -1
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>3</td>
             <td>1</td>
-            <td>2</td>
+            <td>1</td>
+            <td>0</td>
             <td>0</td>
             <td>&nbsp;</td>
         </tr>
@@ -346,7 +292,7 @@ AssertionError: 10001 != -1
                     center: ['50%', '60%'],
                     data:[
                         {value:1, name:'通过'},
-                        {value:2, name:'失败'},
+                        {value:0, name:'失败'},
                         {value:0, name:'错误'}
                     ],
                     itemStyle: {

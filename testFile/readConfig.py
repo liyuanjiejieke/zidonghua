@@ -4,10 +4,8 @@ import testFile.getpathInfo as getpathInfo
 
 #调用实例化，还记得这个类返回的路径为
 path = getpathInfo.get_path()
-
 #这句话是在path路径下再加一级
 config_path = os.path.join(path, 'config.ini')
-
 
 #调用外部的读取配置文件的方法
 config = configparser.ConfigParser()
@@ -24,6 +22,6 @@ class ReadConfig():
     def get_mysql(self,name):
         value=config.get('DATABASE',name)
         return value
-
-if __name__ == '__main__':
-    print(ReadConfig().get_http('baseurl'))
+#
+# if __name__ == '__main__':
+#     print(ReadConfig().get_http('baseurl'))

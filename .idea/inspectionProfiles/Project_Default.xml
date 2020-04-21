@@ -12,6 +12,9 @@
           <option value="common.configEmail.win64com" />
           <option value="win32com" />
           <option value="win32api" />
+          <option value="testFile.getpathInfo.path" />
+          <option value="flask" />
+          <option value="common.signtest.sign1" />
         </list>
       </option>
     </inspection_tool>

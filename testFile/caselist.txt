@@ -1,5 +1,5 @@
 TestCase/test01case
-#user/test02case
+#TestCase/test02case
 #user/test03case
 #user/test04case
 #user/test05case
